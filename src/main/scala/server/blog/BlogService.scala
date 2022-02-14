@@ -4,7 +4,6 @@ import com.linecorp.armeria.common.{HttpResponse, HttpStatus}
 import com.linecorp.armeria.scala.implicits.*
 import com.linecorp.armeria.server.annotation.*
 
-import java.util.concurrent.ConcurrentHashMap
 import scala.collection.mutable
 
 /**
@@ -12,7 +11,7 @@ import scala.collection.mutable
  *
  * @param blogPosts
  */
-case class BlogService(blogPosts: mutable.Map[Int, BlogPost] = ConcurrentHashMap[Int, BlogPost]().asScala):
+case class BlogService(blogPosts: mutable.Map[Int, BlogPost] = scala.collection.concurrent.TrieMap[Int, BlogPost]()):
 
   @Post("/blogs")
   @RequestConverter(classOf[BlogPostRequestConverter])

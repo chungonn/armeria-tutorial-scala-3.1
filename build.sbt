@@ -1,9 +1,5 @@
 val scala3Version = "3.1.1"
 
-lazy val munitVersion = "0.7.29"
-
-lazy val nettyVersion = "4.1.73.Final"
-
 lazy val root = project
   .in(file("."))
   .settings(
