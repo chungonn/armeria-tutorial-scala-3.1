@@ -12,8 +12,6 @@ For more information on the sbt-dotty plugin, see the
 * [Scala 3 version of the tutorial](https://github.com/chungonn/armeria-tutorial-scala-3.1)
 * [Armenia Website](https://armeria.dev/)
 
----
-
 ## How to set up the tutorial project?
 
 ### 1. Create a new Scala 3 project using Sbt
@@ -45,8 +43,6 @@ lazy val root = project
 
 ### 3. Open project using Intellij and work on the tutorial
 Refer to [https://armeria.dev/tutorials](https://armeria.dev/tutorials)
-
----
 
 ## REST Tutorial Introduction
 Reference: [https://armeria.dev/tutorials/rest/blog](https://armeria.dev/tutorials/rest/blog)
